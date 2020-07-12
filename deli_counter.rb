@@ -10,4 +10,6 @@ def line(name)
  end
 end
 
-
+def take_a_number(katz_deli, name)
+return "Welcome #{name} you are number #{katz_deli}"
+end
