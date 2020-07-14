@@ -1,12 +1,11 @@
 def line(array)
   if array.any?
-    currenty_line = "The line is currently: "
+    currenty_line = "The line is currently:"
     array.each_with_index do |name,index|
-      number = index + 1
-      currenty_line= currenty_line + number.to_s + ". "+ name +" "
-    end
-    currenty_line.strip!
-   puts "#{currenty_line}"
+      currenty_line << " #{index+1}. #{name}"
+   end
+    
+   puts currenty_line
   else
     puts "The line is currently empty."
   end
